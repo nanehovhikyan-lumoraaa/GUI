@@ -54,7 +54,8 @@ void problem::toggleAuto()
     if (timer->isActive()) {
         timer->stop();
         pbAuto->setText("Start Auto");
-    } else {
+    }
+    else {
         timer->start();
         pbAuto->setText("Stop Auto");
     }
@@ -65,7 +66,7 @@ void problem::paintEvent(QPaintEvent*)
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing);
 
-    // Draw dark gray traffic light housing box
+    // Draw dark gray traffic light box
     int boxWidth = 120;
     int boxHeight = 330;
     int boxX = (width() - boxWidth) / 2;
